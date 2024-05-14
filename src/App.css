@@ -11,3 +11,31 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.grid-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+  width: 90%;
+  max-width: 900px;
+}
+
+.grid-col {
+  border: solid;
+  border-width: 1px;
+  border-color: white;
+  padding: 20px;
+  /* text-align: center; */
+  border-radius: 5px;
+}
+
+.quiz {
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+}
+
+.quiz:hover {
+  background-color: gray;
+}
