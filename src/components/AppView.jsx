@@ -19,10 +19,12 @@ export const AppView = () => {
 
   return (
     <>
-      {takeQuiz || (
-        <button onClick={() => setAddNew(!addNew)}>
-          {addNew ? "Edit Quiz" : "+ Add New Quiz"}
-        </button>
+      {takeQuiz ? null : (
+        <>
+          <button onClick={() => setAddNew(!addNew)}>
+            {addNew ? "Edit Quiz" : "+ Add New Quiz"}
+          </button>
+        </>
       )}
       <TakeQuiz />
       <div className="grid-container">
