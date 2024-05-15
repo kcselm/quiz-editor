@@ -20,7 +20,9 @@ export const QuizList = () => {
             {quiz.title}
             <button
               onClick={() => (
-                setSelectedQuiz(quiz), setTakeQuiz(true), setScore(0)
+                setSelectedQuiz(quiz),
+                // setTakeQuiz(true),
+                setScore(0)
               )}
             >
               Take Quiz

@@ -26,7 +26,7 @@ export const AppView = () => {
           </button>
         </>
       )}
-      <TakeQuiz />
+      {/* <TakeQuiz /> */}
       <div className="grid-container">
         {takeQuiz ? null : (
           <>
