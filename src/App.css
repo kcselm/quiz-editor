@@ -18,7 +18,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10rem;
   width: 90%;
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 .grid-col {
@@ -28,8 +28,10 @@
   padding: 20px;
   /* text-align: center; */
   border-radius: 5px;
+  width: 100%;
 }
 
+/* Quiz List */
 .quiz {
   padding: 5px;
   border: none;
@@ -38,4 +40,41 @@
 
 .quiz:hover {
   background-color: gray;
+}
+
+/* Form */
+.form {
+  font-size: medium;
+}
+
+.form-group {
+  /* margin-bottom: 15px;
+  margin-right: 0.5rem; */
+  padding: 5px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }

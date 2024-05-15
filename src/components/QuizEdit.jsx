@@ -5,22 +5,26 @@ export const QuizEdit = () => {
   const { selectedQuiz } = useContext(QuizContext)
 
   return (
-    <div className="grid-col">
-      {selectedQuiz && (
-        <>
-          <div>
-            <label htmlFor="title">Title</label>
-            <input value={selectedQuiz.title}></input>
-          </div>
+    <>
+      {selectedQuiz ? (
+        <div className="grid-col">
+          <>
+            <h5>Edit</h5>
 
-          <div>
-            <label htmlFor="description">Description</label>
-            <input value={selectedQuiz.description}></input>
-          </div>
-        </>
-      )}
-      <br></br>
-      <button>Save</button>
-    </div>
+            <div>
+              <label htmlFor="title">Title</label>
+              <input value={selectedQuiz.title}></input>
+            </div>
+
+            <div>
+              <label htmlFor="description">Description</label>
+              <input value={selectedQuiz.description}></input>
+            </div>
+            <br></br>
+            <button>Save</button>
+          </>
+        </div>
+      ) : null}
+    </>
   )
 }
