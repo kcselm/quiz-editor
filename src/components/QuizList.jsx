@@ -3,7 +3,8 @@ import { useContext } from "react"
 import { QuizContext } from "../contexts/QuizContext"
 
 export const QuizList = () => {
-  const { quizzes, setSelectedQuiz, setTakeQuiz } = useContext(QuizContext)
+  const { quizzes, setSelectedQuiz, setTakeQuiz, setScore } =
+    useContext(QuizContext)
 
   return (
     <div className="grid-col">
@@ -17,7 +18,11 @@ export const QuizList = () => {
             }}
           >
             {quiz.title}
-            <button onClick={() => (setSelectedQuiz(quiz), setTakeQuiz(true))}>
+            <button
+              onClick={() => (
+                setSelectedQuiz(quiz), setTakeQuiz(true), setScore(0)
+              )}
+            >
               Take Quiz
             </button>
           </p>

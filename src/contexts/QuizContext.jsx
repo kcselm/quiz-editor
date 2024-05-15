@@ -6,7 +6,8 @@ export const QuizContext = createContext({})
 export default function QuizContextProvider({ children }) {
   const [quizzes, setQuizzes] = useState(exampleData)
   const [selectedQuiz, setSelectedQuiz] = useState({})
-  const [takeQuiz, setTakeQuiz] = useState(false)
+  const [takeQuiz, setTakeQuiz] = useState()
+  const [score, setScore] = useState(0)
 
   return (
     <QuizContext.Provider
@@ -17,6 +18,8 @@ export default function QuizContextProvider({ children }) {
         setSelectedQuiz,
         takeQuiz,
         setTakeQuiz,
+        score,
+        setScore,
       }}
     >
       {children}
